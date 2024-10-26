@@ -11,12 +11,12 @@ import java.util.UUID;
 @Getter
 public class productEntity {
 
-    UUID id;
-    String nameProduct;
-    String category;
-    String description;
-    double price;
-    int amount;
-    boolean active;
+    private UUID id;
+    private String nameProduct;
+    private String category;
+    private String description;
+    private double price;
+    private int amount;
+    private boolean active;
 
 }

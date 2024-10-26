@@ -12,9 +12,10 @@ import java.util.UUID;
 @Getter
 public class userEntity {
 
-    UUID id;
-    String nameUser;
-    String emailUser;
+    private UUID id;
+    private String nameUser;
+    private String emailUser;
+    private String contraseña;
     private List<roleUser> roles;
     private List<productEntity> productos; // productos "propios"
     private List<buysEntity> compras;     // lista de compras
