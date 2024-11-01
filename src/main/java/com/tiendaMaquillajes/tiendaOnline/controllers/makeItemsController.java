@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/makeItems")
+@RequestMapping("/makeitems")
 public class makeItemsController {
 
     private final makeUpItemsService itemsService;
@@ -32,7 +32,7 @@ public class makeItemsController {
         return itemsService.getMakerById(id).orElse(null);
     }
 
-    @PostMapping("/items")
+    @PostMapping("/item")
     public void addMakeItems(@RequestBody makeUpItemsEntity items) {
         itemsService.addmakeItems(items);
     }

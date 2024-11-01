@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/makeUp")
+@RequestMapping("/makeup")
 public class makeUpControlles {
 
     private final makeUpService makeUpService;
@@ -18,7 +18,7 @@ public class makeUpControlles {
     }
 
     // Endpoints para maquillajes
-    @GetMapping("/makeUp")
+    @GetMapping("/makeUps")
     public List<makeUpEntity> getAllmakeUp() {
         return makeUpService.getAllMakeUp();
     }
@@ -28,7 +28,7 @@ public class makeUpControlles {
         return makeUpService.getmakeUpById(id).orElse(null);
     }
 
-    @PostMapping("/makeUps")
+    @PostMapping("/makeUp")
     public void addMakeUp(@RequestBody makeUpEntity makeUp) {
         makeUpService.addMakeUp(makeUp);
     }
