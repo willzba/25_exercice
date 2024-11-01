@@ -3,20 +3,17 @@ package com.tiendaMaquillajes.tiendaOnline.entities;
 import lombok.*;
 
 import java.util.UUID;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
 @Getter
-public class productEntity {
+@Setter
 
+public class makeUpEntity {
     private UUID id;
-    private String nameProduct;
-    private String category;
-    private String description;
+    private String nombreArticulo;
+    private String marca;
+    private String tipoArticulo;
     private double price;
-    private int amount;
-    private boolean active;
-
+    private int stock;
 }
